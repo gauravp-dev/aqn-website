@@ -12,11 +12,11 @@ const Navbar = () => {
   return (
     <div className="absolute inset-x-0 top-0 z-50 bg-opacity-20">
       <nav className="mx-4 my-4 flex items-center justify-between rounded-md bg-[#818181] bg-opacity-45 backdrop-blur-sm px-4 py-3 lg:mx-8">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 h-[90%]">
           <span className="text-lg font-bold text-white mr-6 flex items-center gap-2">
             <Image
-              src="/logo.png"
-              width={100}
+              src="/logo.svg"
+              width={120}
               height={100}
               alt="Aquanova Logo"
               className="object-contain"

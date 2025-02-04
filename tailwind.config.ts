@@ -51,6 +51,14 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+		  screens: {
+			'xs': '375px',  // Extra Small Screens (Custom)
+			'sm': '640px',  // Small devices
+			'md': '768px',  // Medium devices (Tablets)
+			'lg': '1024px', // Large devices (Laptops)
+			'xl': '1280px', // Extra Large Screens
+			'2xl': '1536px' // 2X Large Screens
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

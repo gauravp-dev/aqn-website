@@ -70,3 +70,12 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.bg-custom {
+  background-size: cover; /* Default for small screens */
+}
+
+@media (min-width: 768px) { /* For md (≥768px) and larger screens */
+  .bg-custom {
+    background-size: 100% 100%;
+  }
+}

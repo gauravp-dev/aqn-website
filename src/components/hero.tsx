@@ -65,18 +65,39 @@ function hero() {
             </div>
           </div>
         </section>
-        
-        <section className="relative min-h-[80vh] mt-16 sm:mx-0 md:px-2 lg:px-2 xl:px-2 2xl:px-8 overflow-hidden">
-        <div className="w-[1222px] h-[501.30px] relative">
-  <div className="w-[543px] left-[679px] top-[237px] relative"><span className="text-[#13637d] text-2xl font-semibold font-['Montserrat'] leading-7 italic ml-3">Aquanova </span>
-  <span className="text-[#13637d] text-xl font-normal font-['Noto Sans'] leading-7 ml-3 pl-4 relative"> 
-    stands at the forefront of providing advanced software solutions tailored specifically for the maritime sector. Emphasizing efficiency, safety, and sustainability, we empower maritime enterprises to excel in today’s ever-changing environment.</span></div>
-  <div className="w-[638px] h-[70px] left-[324px] top-0 absolute text-center text-[#13627c] text-[32px] font-semibold font-['Montserrat'] leading-[34.96px]">Enabling vessel management with AI powered digital innovation</div>
-  <div className="w-[679.24px] h-[388.30px] left-0 top-[113px] absolute">
-    <img className="w-[515.09px] h-[388.30px] left-0 top-0 absolute rounded-[54.42px]" src="../../public/section-2.png" />
-    
-  </div>
-</div>
+
+        <section className="relative min-h-[80vh] mt-16 px-4 lg:px-8 overflow-hidden flex flex-col lg:flex-col items-center">
+          {/* Main Heading - Always on Top */}
+          <h2 className="text-[#13627c] text-2xl md:text-3xl font-semibold font-montserrat leading-[1.2] text-center lg:text-left mb-6">
+            <div className="flex flex-col items-center lg:items-start">
+              <span>Enabling vessel management with AI</span>
+              <span className="lg:pl-20">powered digital innovation</span>
+            </div>
+          </h2>
+
+          {/* Content Wrapper */}
+          <div className="w-full flex flex-col lg:flex-row items-center lg:items-stretch gap-6 lg:gap-12">
+            {/* Image - Between Heading & Text on Small, Left on Large */}
+            <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+              <div
+                className="w-full max-w-[679px] h-auto aspect-[679/388] rounded-[54.42px] bg-cover bg-center"
+                style={{
+                  backgroundImage: "url(/section-2.png)",
+                }}
+              />
+            </div>
+
+            {/* Text - Below Image on Small, Right on Large */}
+            <div className="w-full lg:w-1/2 flex flex-col justify-center text-center align-middle lg:text-left px-4 lg:px-8">
+              <p className="text-[#13637d] text-xl font-noto leading-relaxed ">
+                <span className="font-semibold italic ">Aquanova</span> stands
+                at the forefront of providing advanced software solutions
+                tailored specifically for the maritime sector. Emphasizing
+                efficiency, safety, and sustainability, we empower maritime
+                enterprises to excel in today’s ever-changing environment.
+              </p>
+            </div>
+          </div>
         </section>
       </div>
     </>

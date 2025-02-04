@@ -65,6 +65,19 @@ function hero() {
             </div>
           </div>
         </section>
+        
+        <section className="relative min-h-[80vh] mt-16 sm:mx-0 md:px-2 lg:px-2 xl:px-2 2xl:px-8 overflow-hidden">
+        <div className="w-[1222px] h-[501.30px] relative">
+  <div className="w-[543px] left-[679px] top-[237px] relative"><span className="text-[#13637d] text-2xl font-semibold font-['Montserrat'] leading-7 italic ml-3">Aquanova </span>
+  <span className="text-[#13637d] text-xl font-normal font-['Noto Sans'] leading-7 ml-3 pl-4 relative"> 
+    stands at the forefront of providing advanced software solutions tailored specifically for the maritime sector. Emphasizing efficiency, safety, and sustainability, we empower maritime enterprises to excel in today’s ever-changing environment.</span></div>
+  <div className="w-[638px] h-[70px] left-[324px] top-0 absolute text-center text-[#13627c] text-[32px] font-semibold font-['Montserrat'] leading-[34.96px]">Enabling vessel management with AI powered digital innovation</div>
+  <div className="w-[679.24px] h-[388.30px] left-0 top-[113px] absolute">
+    <img className="w-[515.09px] h-[388.30px] left-0 top-0 absolute rounded-[54.42px]" src="../../public/section-2.png" />
+    
+  </div>
+</div>
+        </section>
       </div>
     </>
   );

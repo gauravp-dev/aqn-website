@@ -42,9 +42,9 @@ export default function ProductShowcase() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, index) => (
-            <Card key={index} className="bg-white/95 backdrop-blur-sm border-spacing-2 shadow-lg">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="w-28 h-24 mb-6 relative">
+            <Card key={index} className="bg-white/95 backdrop-blur-sm border-spacing-2 shadow-lg flex flex-col">
+              <CardContent className="flex flex-col flex-grow p-6 text-center">
+                <div className="w-28 h-24 mb-4 mx-auto relative">
                   <Image
                     src={product.logoUrl || "/prod-logo.svg"}
                     alt={`${product.title} logo`}
@@ -57,10 +57,12 @@ export default function ProductShowcase() {
                   {product.title}
                 </h2>
                 
-                <p className="text-[#333333] font-noto mb-16">
+                <p className="text-[#333333] font-noto mb-6 flex-grow">
                   {product.description}
                 </p>
-                
+              </CardContent>
+              
+              <div className="text-center mb-4">
                 <Link 
                   href={product.link}
                   className="lowecase text-[#0B4D6B] font-noto font-semibold hover:text-[#164371]/80 inline-flex items-center gap-2 transition-colors"
@@ -68,7 +70,7 @@ export default function ProductShowcase() {
                   Check out {product.desc} now
                   <ChevronRight className="w-4 h-4" />
                 </Link>
-              </CardContent>
+              </div>
             </Card>
           ))}
         </div>

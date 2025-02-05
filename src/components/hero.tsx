@@ -19,7 +19,7 @@ function hero() {
   }
   return (
     <>
-      <div className="min-h-screen bg-[#f8f8f8] px-1 lg:px-12 xl:px-12 2xl:px-14 gap-10">
+      <div className="min-h-screen bg-[#ffffff] px-1 lg:px-12 xl:px-12 2xl:px-14 gap-10">
         <section className="relative min-h-[80vh] sm:mx-0 md:px-2 lg:px-2 xl:px-2 2xl:px-8 overflow-hidden">
           {/* Background Image Container */}
           <div
@@ -66,7 +66,7 @@ function hero() {
           </div>
         </section>
 
-        <section className="relative min-h-[80vh] mt-16 px-4 lg:px-8 overflow-hidden flex flex-col lg:flex-col items-center">
+        <section className="relative min-h-[70vh]  mt-16 px-4 lg:px-8 overflow-hidden flex flex-col lg:flex-col items-center">
           {/* Main Heading - Always on Top */}
           <h2 className="text-[#13627c] text-2xl md:text-3xl font-semibold font-montserrat leading-[1.2] text-center lg:text-left mb-6">
             <div className="flex flex-col items-center lg:items-start">

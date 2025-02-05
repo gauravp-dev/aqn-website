@@ -1,9 +1,9 @@
 // components/navbar.tsx
+
 "use client";
 
-// components/navbar.tsx
-
 import Image from "next/image";
+import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -23,28 +23,20 @@ const Navbar = () => {
             />
           </span>
           <div className="hidden lg:flex items-center gap-4">
-            <Button
-              variant="ghost"
-              className="text-white hover:text-blue-700/80"
-            >
-              Product <ChevronDown className="ml-1 h-4 w-4" />
-            </Button>
-            <Button
-              variant="ghost"
-              className="text-white hover:text-blue-700/80"
-            >
+            {/* Link to Product Section */}
+            <Link href="/product" passHref>
+              <Button variant="ghost" className="text-white hover:text-blue-700/80">
+                Product <ChevronDown className="ml-1 h-4 w-4" />
+              </Button>
+            </Link>
+
+            <Button variant="ghost" className="text-white hover:text-blue-700/80">
               Marine Insights <ChevronDown className="ml-1 h-4 w-4" />
             </Button>
-            <Button
-              variant="ghost"
-              className="text-white hover:text-blue-700/80"
-            >
+            <Button variant="ghost" className="text-white hover:text-blue-700/80">
               Careers
             </Button>
-            <Button
-              variant="ghost"
-              className="text-white hover:text-blue-700/80"
-            >
+            <Button variant="ghost" className="text-white hover:text-blue-700/80">
               About us
             </Button>
           </div>
@@ -63,12 +55,8 @@ const Navbar = () => {
               </SheetTrigger>
               <SheetContent>
                 <div className="flex flex-col gap-4 pt-10">
-                  <Button variant="ghost">
-                    Product <ChevronDown className="ml-1 h-4 w-4" />
-                  </Button>
-                  <Button variant="ghost">
-                    Marine Insights <ChevronDown className="ml-1 h-4 w-4" />
-                  </Button>
+                  <Button variant="ghost">Product <ChevronDown className="ml-1 h-4 w-4" /></Button>
+                  <Button variant="ghost">Marine Insights <ChevronDown className="ml-1 h-4 w-4" /></Button>
                   <Button variant="ghost">Careers</Button>
                   <Button variant="ghost">About us</Button>
                 </div>

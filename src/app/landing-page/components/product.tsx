@@ -30,7 +30,7 @@ const products = [
 export default function ProductShowcase() {
   return (
     <div id="product"
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat py-16 px-4"
+      className="min-h-[70vh] w-full- bg-cover bg-center bg-no-repeat py-2 sm:py-8 md:py-8 px-4"
       style={{
         backgroundImage: `url('bg-product-n.png')`
       }}

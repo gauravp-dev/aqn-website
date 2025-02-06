@@ -5,7 +5,7 @@ import Navbar from "./navbarSection";
 import { Button } from "@/components/ui/button";
 import { Link } from "lucide-react";
 import { useState, useEffect } from "react";
-import "../app/globals.css";
+import "../../globals.css";
 
 function hero() {
   const [isClient, setIsClient] = useState(false);
@@ -66,7 +66,7 @@ function hero() {
           </div>
         </section>
 
-        <section className="relative min-h-[70vh]  mt-16 px-4 lg:px-8 overflow-hidden flex flex-col lg:flex-col items-center">
+        <section className="relative min-h-[70vh]  mt-16 mb-8 px-4 lg:px-8 overflow-hidden flex flex-col lg:flex-col items-center">
           {/* Main Heading - Always on Top */}
           <h2 className="text-[#13627c] text-2xl md:text-3xl font-semibold font-montserrat leading-[1.2] text-center lg:text-left mb-6">
             <div className="flex flex-col items-center lg:items-start">

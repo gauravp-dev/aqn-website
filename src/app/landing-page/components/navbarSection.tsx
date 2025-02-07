@@ -40,9 +40,11 @@ const Navbar = () => {
             <Button variant="ghost" className="text-white hover:text-blue-700/80">
               Careers
             </Button>
+            <Link href="#about" passHref>
             <Button variant="ghost" className="text-white hover:text-blue-700/80">
               About us
             </Button>
+            </Link>
           </div>
         </div>
 

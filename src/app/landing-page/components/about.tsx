@@ -3,10 +3,11 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div className="relative bg-white flex items-center justify-center min-h-screen px-6 overflow-hidden">
+    <div  id ="about"
+     className="relative bg-white flex items-center justify-center min-h-screen px-2 overflow-hidden py-4">
       <Head>
         <title>About Us</title>
-      </Head>
+      </Head> 
 
       {/* Left Image - Touching Left Boundary (Hidden on Small Screens) */}
       <div className="absolute top-10 left-0 h-auto w-45 hidden md:block">

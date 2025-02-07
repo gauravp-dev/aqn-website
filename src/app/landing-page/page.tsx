@@ -9,6 +9,8 @@ import About from "./components/about";
 import Contact from "./components/contact";
 import SecurityAndBackup from "./components/securityAndBackup";
 import Footer from "./components/footer";
+
+
 export default function Home() {
   return (
     <>
@@ -20,7 +22,8 @@ export default function Home() {
       <Contact/>
       <SecurityAndBackup/>
       <Footer/>
-
+      
+   
     </>
   );
 }

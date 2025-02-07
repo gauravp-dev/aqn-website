@@ -9,6 +9,7 @@ import About from "./components/about";
 import Contact from "./components/contact";
 import SecurityAndBackup from "./components/securityAndBackup";
 import Footer from "./components/footer";
+import Newfeat from "./components/newfeat";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Contact/>
       <SecurityAndBackup/>
       <Footer/>
+      <Newfeat/>
       
    
     </>

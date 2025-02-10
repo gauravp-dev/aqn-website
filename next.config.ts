@@ -5,16 +5,7 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   output: "export",
   basePath: "/aqn-website",
-
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/landing-page", // default route
-        permanent: false, // Use true for a 301 permanent redirect
-      },
-    ];
-  },
+  assetPrefix: "/aqn-website/",
 };
 
 export default nextConfig;

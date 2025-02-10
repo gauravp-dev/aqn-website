@@ -1,20 +1,20 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 export default function Contact() {
   return (
     <div className="relative flex items-center justify-center min-h-[60vh] bg-[url('/product-bg-n.png')] bg-cover bg-center bg-no-repeat">
-    {/* Background Overlay for Better Visibility */}
-    <div className="absolute inset-0 bg-white bg-opacity-50"></div>
+      {/* Background Overlay for Better Visibility */}
+      <div className="absolute inset-0 bg-white bg-opacity-50"></div>
       <Head>
         <title>Contact Form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      
+
       <div className="bg-white bg-opacity-90 backdrop-blur-lg rounded-[40px] shadow-lg p-8 max-w-7xl w-full">
         <h2 className="text-center text-2xl md:text-3xl font-semibold font-montserrat text-[#0B4D6B] mb-12">
           Get in touch with us.
           <br />
-          We're here to assist you.
+          {"We're here to assist you."}
         </h2>
 
         <form className="space-y-4">
@@ -56,7 +56,7 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
-              rows="4"
+              rows={4}
               className="w-full border-b-2 border-gray-300 focus:border-teal-500 outline-none py-2 bg-transparent"
             ></textarea>
           </div>

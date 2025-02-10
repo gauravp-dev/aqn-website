@@ -25,7 +25,7 @@ function hero() {
           <div
             className="absolute inset-0 z-0 rounded-b-sm md:rounded-b-2xl bg-custom"
             style={{
-              backgroundImage: "url(/bg-img.webp)",
+              backgroundImage: "url(/aqn-website/bg-img.webp)",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
@@ -57,7 +57,7 @@ function hero() {
                 </h1>
                 <Button
                   size="lg"
-                  className="bg-[#ffffff] w-full md:w-[40%] sm:[40%] px-8 py-6 text-xl text-[#3782f4]  hover:bg-[#8c95a3]/90 hover:text-black"
+                  className=" w-full md:w-[40%] sm:[40%] px-8 py-6 text-xl text-white bg-[#31C4F5]   hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white"
                 >
                   Book a demo
                 </Button>
@@ -82,7 +82,7 @@ function hero() {
               <div
                 className="w-full max-w-[679px] h-auto aspect-[679/388] rounded-[54.42px] bg-cover bg-center"
                 style={{
-                  backgroundImage: "url(/section-2.png)",
+                  backgroundImage: "url(/aqn-website/section-2.png)",
                 }}
               />
             </div>

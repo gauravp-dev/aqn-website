@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: "/aqn-website",
   assetPrefix: "/aqn-website/",
+  images: {
+    unoptimized: true, // Disable image optimization for static exports
+  },
 };
 
 export default nextConfig;

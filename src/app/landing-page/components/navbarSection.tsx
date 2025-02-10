@@ -55,13 +55,15 @@ const Navbar = () => {
               onMouseEnter={() => setIsProductHovered(true)}
               onMouseLeave={() => setIsProductHovered(false)}
             >
-              <Button
-                variant="ghost"
-                className="text-white hover:text-blue-700/80"
-              >
-                Product <ChevronDown className="ml-1 h-4 w-4" />
-              </Button>
-
+              <Link href="#product" passHref>
+                <Button
+                  variant="ghost"
+                  className="text-white hover:text-blue-700/80"
+                  onClick={() => setIsProductHovered((prev) => !prev)} // Toggle on click
+                >
+                  Product <ChevronDown className="ml-1 h-4 w-4" />
+                </Button>
+              </Link>
               {/* Product Dropdown */}
               {isProductHovered && (
                 <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[350px] bg-white rounded-lg shadow-lg z-50">
@@ -138,7 +140,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button className="rounded-md bg-white text-[#3782f4] hover:bg-[#8c95a3]/90 hover:text-black">
+          <Button className="rounded-md bg-[#31C4F5] text-white hover:bg-[#8c95a3]/90 hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white">
             Talk to Sales
           </Button>
           <div className="lg:hidden relative">
@@ -182,7 +184,6 @@ const Navbar = () => {
                 </div>
               </div>
             )}
-          
           </div>
         </div>
       </nav>

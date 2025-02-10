@@ -57,7 +57,7 @@ function hero() {
                 </h1>
                 <Button
                   size="lg"
-                  className="bg-[#ffffff] w-full md:w-[40%] sm:[40%] px-8 py-6 text-xl text-[#3782f4]  hover:bg-[#8c95a3]/90 hover:text-black"
+                  className=" w-full md:w-[40%] sm:[40%] px-8 py-6 text-xl text-white bg-[#31C4F5]   hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white"
                 >
                   Book a demo
                 </Button>

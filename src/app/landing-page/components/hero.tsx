@@ -48,7 +48,7 @@ function hero() {
 
             </div>
 
-            {/* "Book a Demo" Button - Below */}
+            {/* "Book a Demo" Button*/}
             <div className="flex justify-start py-8">
               <Button
                 size="lg"

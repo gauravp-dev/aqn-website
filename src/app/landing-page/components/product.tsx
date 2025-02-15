@@ -49,13 +49,13 @@ export default function ProductShowcase() {
               key={index}
               className="rounded-3xl bg-white/95 backdrop-blur-sm border-spacing-2 shadow-2xl flex flex-col"
             >
-              {/* SVG Background Header with Custom Height */}
+              {/* Background */}
               <div className="relative w-full" style={{ height: "180px" }}>
                 <Image
                   src="/re2.png"
                   alt="Background"
-                  width={500} // Set a fixed width (can be adjusted)
-                  height={100} // Set custom height
+                  width={500} 
+                  height={100} 
                   className="w-full h-100 object-cover rounded-t-3xl"
                 />
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -72,11 +72,11 @@ export default function ProductShowcase() {
               </div>
 
               <CardContent className="flex flex-col flex-grow p-10 text-center">
-                <h2 className="text-xl font-bold font-noto text-[#13627c] mb-6">
+                <h2 className="text-2xl font-bold font-noto text-[#13627c] mb-4">
                   {product.title}
                 </h2>
 
-                <p className="text-[#13627c] font-noto mb-6 flex-grow">
+                <p className="text-[#13627c] text-lg font-noto mb-6 flex-grow">
                   {product.description}
                 </p>
               </CardContent>

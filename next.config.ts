@@ -1,5 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  reactStrictMode: false,
+  trailingSlash: false,
+  output: "export",
+  basePath: "/aqn-website",
+
   async redirects() {
     return [
       {

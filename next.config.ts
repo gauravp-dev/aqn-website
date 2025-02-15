@@ -10,11 +10,11 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/",
-        destination: "/landing-page", // default route
-        permanent: false, // Use true for a 301 permanent redirect
+        destination: "/landing-page",
+        permanent: false,
       },
     ];
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

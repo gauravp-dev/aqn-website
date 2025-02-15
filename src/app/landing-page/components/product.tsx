@@ -35,7 +35,7 @@ export default function ProductShowcase() {
       id="product"
       className="min-h-[50vh] w-full bg-cover bg-center bg-no-repeat py-2 sm:py-8 md:py-8 px-4"
       style={{
-        backgroundImage: `url('bg-product-n.png')`,
+        backgroundImage: `url('/aqn-website/bg-product-n.png')`,
       }}
     >
       <div className="max-w-6xl mx-auto">
@@ -52,7 +52,7 @@ export default function ProductShowcase() {
               {/* Background */}
               <div className="relative w-full" style={{ height: "180px" }}>
                 <Image
-                  src="/re.png"
+                  src="/aqn-website/re.png"
                   alt="Background"
                   width={500}
                   height={100}

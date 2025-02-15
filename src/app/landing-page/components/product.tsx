@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,12 +33,12 @@ export default function ProductShowcase() {
   return (
     <div
       id="product"
-      className="min-h-[70vh] w-full- bg-cover bg-center bg-no-repeat py-2 sm:py-8 md:py-8 px-4"
+      className="min-h-[50vh] w-full bg-cover bg-center bg-no-repeat py-2 sm:py-8 md:py-8 px-4"
       style={{
         backgroundImage: `url('bg-product-n.png')`,
       }}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h1 className="text-center text-3xl md:text-4xl font-bold text-[#0B4D6B] mb-12">
           Explore our product line ⇣
         </h1>
@@ -47,23 +47,36 @@ export default function ProductShowcase() {
           {products.map((product, index) => (
             <Card
               key={index}
-              className="bg-white/95 backdrop-blur-sm border-spacing-2 shadow-lg flex flex-col"
+              className="rounded-3xl bg-white/95 backdrop-blur-sm border-spacing-2 shadow-2xl flex flex-col"
             >
-              <CardContent className="flex flex-col flex-grow p-6 text-center">
-                <div className="w-28 h-24 mb-4 mx-auto relative">
-                  <Image
-                    src={product.logoUrl || "/prod-logo.svg"}
-                    alt={`${product.title} logo`}
-                    fill
-                    className="object-contain"
-                  />
+              {/* Background */}
+              <div className="relative w-full" style={{ height: "180px" }}>
+                <Image
+                  src="/re.png"
+                  alt="Background"
+                  width={500}
+                  height={100}
+                  className="w-full h-100 object-cover rounded-t-3xl"
+                />
+                <div className="absolute inset-0 flex justify-center items-center">
+                  <div className="mt-14 w-32 h-32 rounded-full bg-white shadow-lg flex items-center justify-center">
+                    <Image
+                      src={product.logoUrl || "/prod-logo.svg"}
+                      alt={`${product.title} logo`}
+                      width={100}
+                      height={100}
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
+              </div>
 
-                <h2 className="text-xl font-bold font-noto text-[#333333] mb-6">
+              <CardContent className="flex flex-col flex-grow p-10 text-center">
+                <h2 className="text-2xl font-bold font-noto text-[#13627c] mb-4">
                   {product.title}
                 </h2>
 
-                <p className="text-[#333333] font-noto mb-6 flex-grow">
+                <p className="text-[#13627c] text-lg font-noto mb-6 flex-grow">
                   {product.description}
                 </p>
               </CardContent>
@@ -71,10 +84,9 @@ export default function ProductShowcase() {
               <div className="text-center mb-4">
                 <Link
                   href={product.link}
-                  className="lowecase text-[#0B4D6B] font-noto font-semibold hover:text-[#164371]/80 inline-flex items-center gap-2 transition-colors"
+                  className="inline-flex items-center justify-center w-16 h-10 rounded-xl  border-2 border-blue-700 text-cyan-600 hover:bg-cyan-600 hover:text-white transition-colors group"
                 >
-                  Check out {product.desc} now
-                  <ChevronRight className="w-4 h-4" />
+                  <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
             </Card>

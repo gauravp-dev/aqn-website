@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Buttons Section */}
           <div className="flex justify-center space-x-4">
-            <Button className="bg-[#31C4F5] text-white py-2 px-6 rounded-40px">
+            <Button className="bg-[#31C4F5] text-white py-2 px-6 hover:text-[#13627c]  hover:bg-white rounded-40px">
               Get Started
             </Button>
             <Button className="border border-white text-white bg-[#0C495D] py-2 px-6 rounded-40px">

@@ -1,5 +1,6 @@
 // In your Home component or wherever you need the navbar
 "use client";
+import { useLayoutEffect } from "react";
 import ProductShowcase from "@/app/landing-page/components/product";
 import Hero from "./components/hero";
 import "../globals.css";
@@ -19,6 +20,9 @@ export default function Home() {
     router.replace("/landing-page");
   }, [router]);
 
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0); // Reset scroll position to top on refresh
+  }, []);
   return (
     <>
       <Hero />

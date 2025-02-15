@@ -12,31 +12,33 @@ export default function About() {
       </Head>
 
       {/* Left Image - Touching Left Boundary (Hidden on Small Screens) */}
-      <div className="absolute top-10 left-0 h-auto w-45 hidden md:block">
+      <div className="absolute top-10 left-0 h-auto w-50 lg:w-60 hidden md:block">
         <Image
           src="/aqn-website/marine-engineer.png"
           alt="Marine engineer working on control panel"
           className="w-full h-auto"
           width={150}
           height={200}
+          priority
         />
       </div>
 
       {/* Right Image - Touching Right Boundary (Hidden on Small Screens) */}
-      <div className="absolute bottom-10 right-0 h-auto w-50 hidden md:block">
+      <div className="absolute bottom-10 right-0 h-auto w-50 lg:w-60 hidden md:block">
         <Image
           src="/aqn-website/marine-engineer2.png"
           alt="Marine engineer standing on a ship deck"
           className="w-full h-auto"
           width={150}
           height={200}
+          priority
         />
       </div>
 
       {/* Content Container */}
       <div className="relative max-w-4xl text-center mx-auto p-16 z-10">
         <h2 className="text-4xl font-bold text-[#0B4D6B] mb-4">About us</h2>
-        <p className=" mb-4 lg:text-xl font-montserrat text-[#0B4D6B]">
+        <p className="mb-4 lg:text-xl font-montserrat text-[#0B4D6B]">
           At AquaNova, our team of senior marine engineers and technology
           leaders is devoted to tackling the unique &amp; unmitigated challenges
           of the maritime industry. With our deep understanding of maritime

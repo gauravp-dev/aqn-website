@@ -52,14 +52,14 @@ export default function ProductShowcase() {
               {/* Background */}
               <div className="relative w-full" style={{ height: "180px" }}>
                 <Image
-                  src="/re2.png"
+                  src="/re.png"
                   alt="Background"
                   width={500} 
                   height={100} 
                   className="w-full h-100 object-cover rounded-t-3xl"
                 />
                 <div className="absolute inset-0 flex justify-center items-center">
-                  <div className="mt-16 w-32 h-32 rounded-full bg-white shadow-lg flex items-center justify-center">
+                  <div className="mt-14 w-32 h-32 rounded-full bg-white shadow-lg flex items-center justify-center">
                     <Image
                       src={product.logoUrl || "/prod-logo.svg"}
                       alt={`${product.title} logo`}

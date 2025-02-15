@@ -29,30 +29,30 @@ function hero() {
           <Navbar />
 
           {/* Content */}
-          <div className="relative z-10 mx-4 pt-32 px-4 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-12 lg:px-8 xl:px-8 2xl:px-8">
+          <div className="relative z-10 mx-4 pt-32 px-4 sm:mx-4 md:mx-6 lg:mx-4 xl:mx-4 lg:px-4 xl:px-4 2xl:px-4">
             <div className="grid grid-cols-1 items-center gap-0 sm:mt-7 md:mt-10 lg:grid-cols-5">
-              <div className="space-y-6 lg:col-span-3">
-                <h1 className="font-montserrat text-4xl font-bold leading-tight text-white md:text-5xl lg:text-5xl xl:test-5xl">
-                  Unlock the power of data-driven ship management
-                </h1>
+            <div className="space-y-6 lg:col-span-3">
+  <h1 className="font-montserrat text-5xl font-bold leading-tight text-white md:text-5xl lg:text-5xl xl:text-5xl">
+    Unlock the power of data-driven ship management with
+  </h1>
 
-                {/* "Experience AQUAPRO" Button - Full Width */}
-                <Button
-                  size="lg"
-                  className="w-full max-w-[600px] px-8 py-6 text-xl text-white bg-[#31C4F5] hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white"
-                  onClick={() => router.push("/aquapro")}
-                  aria-label="Experience AQUAPRO"
-                >
-                  EXPERIENCE AQUAPRO
-                </Button>
-              </div>
+  {/* Clickable Text for Navigation */}
+  <p
+  className="text-[#31C4F5] text-5xl underline cursor-pointer hover:text-[#ffffff] inline-block w-fit"
+  onClick={() => router.push("/aquapro")}
+>
+  AQUAPRO↗
+</p>
+
+</div>
+
             </div>
 
             {/* "Book a Demo" Button - Below */}
             <div className="flex justify-start py-8">
               <Button
                 size="lg"
-                className="w-full lg:w-1/2 max-w-[300px] px-8 py-6 text-xl text-white bg-[#31C4F5] hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white"
+                className="w-full sm:w-full lg:w-1/2 lg:max-w-[200px] px-2 py-6 text-xl text-white bg-[#31C4F5] hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white"
               >
                 Book a Demo
               </Button>

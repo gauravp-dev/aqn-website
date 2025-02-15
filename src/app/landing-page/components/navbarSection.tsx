@@ -94,7 +94,7 @@ const Navbar = () => {
                         >
                           <div className="relative w-10 h-10">
                             <Image
-                              src={product.icon || "/prod-logo.svg"}
+                              src={product.icon || "/aqn-website/prod-logo.svg"}
                               alt=""
                               fill
                               className="object-contain"

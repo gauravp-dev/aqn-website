@@ -17,7 +17,8 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="flex flex-col justify-center bg-white min-h-screen">
+    <div 
+    id="aboutUs" className="flex flex-col justify-center bg-white min-h-screen">
       {/* Hero Section */}
       <div className="bg-white rounded-[40px] overflow-hidden mx-4 sm:mx-12 my-6 sm:my-8 lg:mx-48">
         <div className="grid md:grid-cols-1 items-center h-[40vh] border-b-2">

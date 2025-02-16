@@ -128,7 +128,7 @@ const Navbar = () => {
             >
               Careers
             </Button>
-            <Link href="#about" passHref>
+            <Link href="#aboutUs" passHref>
               <Button
                 variant="ghost"
                 className="text-white hover:text-blue-700/80"

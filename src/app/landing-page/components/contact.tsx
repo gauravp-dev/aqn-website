@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Contact() {
   return (
-    <div className="relative flex items-center justify-center min-h-[60vh] bg-[url('/bg-product-n.png')] bg-cover bg-center bg-no-repeat">
+    <div className="relative flex items-center justify-center min-h-[60vh] bg-[url('/aqn-website/bg-product-n.png')] bg-cover bg-center bg-no-repeat">
       {/* Background Overlay for Better Visibility */}
       <div className="absolute inset-0 bg-white bg-opacity-50"></div>
 

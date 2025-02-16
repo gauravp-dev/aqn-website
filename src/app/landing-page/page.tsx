@@ -6,7 +6,7 @@ import Hero from "./components/hero";
 import "../globals.css";
 
 import Feature2 from "./components/feature2";
-import About from "./components/about";
+
 import Contact from "./components/contact";
 import SecurityAndBackup from "./components/securityAndBackup";
 import Footer from "./components/footer";
@@ -30,11 +30,11 @@ export default function Home() {
       <ProductShowcase />
       <Newfeat />
       <Feature2 />
-      <About />
+      <AboutPage/>
       <Contact />
       <SecurityAndBackup />
       <Footer />
-      <AboutPage/>
+      
     </>
   );
 }

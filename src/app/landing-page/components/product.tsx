@@ -47,7 +47,7 @@ export default function ProductShowcase() {
           {products.map((product, index) => (
             <Card
               key={index}
-              className="rounded-3xl bg-white/95 backdrop-blur-sm border-spacing-2 shadow-2xl flex flex-col"
+              className="rounded-[40px] bg-white/95 backdrop-blur-sm border-spacing-2 shadow-2xl flex flex-col"
             >
               {/* Background */}
               <div className="relative w-full" style={{ height: "180px" }}>
@@ -56,7 +56,7 @@ export default function ProductShowcase() {
                   alt="Background"
                   width={500}
                   height={100}
-                  className="w-full h-100 object-cover rounded-t-3xl"
+                  className="w-full h-100 object-cover rounded-t-[40px]"
                 />
                 <div className="absolute inset-0 flex justify-center items-center">
                   <div className="mt-14 w-32 h-32 rounded-full bg-white shadow-lg flex items-center justify-center">
@@ -84,7 +84,7 @@ export default function ProductShowcase() {
               <div className="text-center mb-4">
                 <Link
                   href={product.link}
-                  className="inline-flex items-center justify-center w-16 h-10 rounded-xl  border-2 border-blue-700 text-cyan-600 hover:bg-cyan-600 hover:text-white transition-colors group"
+                  className="inline-flex mb-4 items-center justify-center w-16 h-10 rounded-xl  border-2 border-blue-700 text-cyan-600 hover:bg-cyan-600 hover:text-white transition-colors group"
                 >
                   <ArrowRight className="w-5 h-5" />
                 </Link>

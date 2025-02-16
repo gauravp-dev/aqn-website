@@ -13,6 +13,7 @@ import Footer from "./components/footer";
 import Newfeat from "./components/newfeat";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import AboutPage from "./components/newaboutus";
 
 export default function Home() {
   const router = useRouter();
@@ -33,6 +34,7 @@ export default function Home() {
       <Contact />
       <SecurityAndBackup />
       <Footer />
+      <AboutPage/>
     </>
   );
 }

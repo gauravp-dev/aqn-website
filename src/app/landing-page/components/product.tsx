@@ -84,9 +84,9 @@ export default function ProductShowcase() {
               <div className="text-center mb-4">
                 <Link
                   href={product.link}
-                  className="inline-flex mb-4 items-center justify-center w-16 h-10 rounded-xl  border-2 border-blue-700 text-cyan-600 hover:bg-cyan-600 hover:text-white transition-colors group"
+                  className="inline-flex mb-6 items-center justify-center w-24 h-14 rounded-lg  border-2 border-[#13627c] text-cyan-600 hover:bg-cyan-600 hover:text-white transition-colors group"
                 >
-                  <ArrowRight className="w-5 h-5" />
+                  <ArrowRight className="w-7 h-7" />
                 </Link>
               </div>
             </Card>

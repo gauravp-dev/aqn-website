@@ -116,18 +116,7 @@ const Navbar = () => {
               )}
             </div>
 
-            <Button
-              variant="ghost"
-              className="text-white hover:text-blue-700/80"
-            >
-              Marine Insights <ChevronDown className="ml-1 h-4 w-4" />
-            </Button>
-            <Button
-              variant="ghost"
-              className="text-white hover:text-blue-700/80"
-            >
-              Careers
-            </Button>
+          
             <Link href="#aboutUs" passHref>
               <Button
                 variant="ghost"
@@ -140,9 +129,11 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
+        <Link href="#contactus" passHref>
           <Button className="rounded-md bg-[#31C4F5] text-white hover:bg-[#8c95a3]/90 hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white">
             Talk to Sales
           </Button>
+          </Link>
           <div className="lg:hidden relative">
             <Button
               variant="ghost"
@@ -163,18 +154,7 @@ const Navbar = () => {
                       Product <ChevronDown className="ml-1 h-4 w-4" />
                     </Button>
                   </Link>
-                  <Button
-                    variant="ghost"
-                    className="flex items-center justify-center"
-                  >
-                    Marine Insights <ChevronDown className="ml-1 h-4 w-4" />
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    className="flex items-center justify-center"
-                  >
-                    Careers
-                  </Button>
+                
                   <Button
                     variant="ghost"
                     className="flex items-center justify-center"

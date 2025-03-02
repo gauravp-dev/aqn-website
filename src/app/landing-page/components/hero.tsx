@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import Navbar from "./navbarSection";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 import "../../globals.css";
 
@@ -49,6 +50,7 @@ function hero() {
             </div>
 
             {/* "Book a Demo" Button*/}
+            <Link href="#contactus" passHref>
             <div className="flex justify-start py-8">
               <Button
                 size="lg"
@@ -57,6 +59,7 @@ function hero() {
                 Book a Demo
               </Button>
             </div>
+            </Link>
           </div>
         </section>
 

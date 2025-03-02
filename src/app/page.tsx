@@ -4,7 +4,6 @@ import { useLayoutEffect } from "react";
 import ProductShowcase from "@/app/landing-page/components/product";
 import Hero from "./landing-page/components/hero";
 
-
 import Feature2 from "./landing-page/components/feature2";
 
 import Contact from "./landing-page/components/contact";
@@ -13,11 +12,8 @@ import Footer from "./landing-page/components/footer";
 import Newfeat from "./landing-page/components/newfeat";
 
 import AboutPage from "./landing-page/components/newaboutus";
-import ContactPage from "./landing-page/newcontactus";
 
 export default function Home() {
-
-
   useLayoutEffect(() => {
     window.scrollTo(0, 0); // Reset scroll position to top on refresh
   }, []);
@@ -27,12 +23,11 @@ export default function Home() {
       <ProductShowcase />
       <Newfeat />
       <Feature2 />
-      <AboutPage/>
+      <AboutPage />
       <Contact />
- 
+
       <SecurityAndBackup />
       <Footer />
-      
     </>
   );
 }

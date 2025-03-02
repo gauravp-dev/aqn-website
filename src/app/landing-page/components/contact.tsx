@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <div
       id="contactus"
-      className="relative flex flex-col items-center justify-center min-h-[60vh] bg-[url('/aqn-website/bg-product-n.png')] bg-cover bg-center bg-no-repeat"
+      className="relative flex flex-col items-center justify-center min-h-[60vh] bg-[url('/bg-product-n.png')] bg-cover bg-center bg-no-repeat"
     >
       {/* Background Overlay for Better Visibility */}
       <div className="absolute inset-0 bg-white bg-opacity-50"></div>
@@ -27,7 +27,7 @@ export default function Contact() {
           {"We're here to assist you."}
         </h2>
 
-        <form className="space-y-4">
+        {/* <form className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <label htmlFor="name" className="block text-teal-800">
@@ -85,7 +85,7 @@ export default function Contact() {
               Leave a Message
             </button>
           </div>
-        </form>
+        </form> */}
 
         {/* Contact via WhatsApp & Email */}
         <div className="flex items-center justify-center min-h-40 w-full">

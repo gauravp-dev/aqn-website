@@ -10,7 +10,7 @@ function Newfeat() {
       </h1>
       <div className="flex-1 flex justify-center items-center w-full h-[60%]">
         <Image
-          src="/aqn-website/newfeat.svg"
+          src="/newfeat.svg"
           alt="My Logo"
           width={100}
           height={100}

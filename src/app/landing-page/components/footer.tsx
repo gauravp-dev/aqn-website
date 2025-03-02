@@ -4,7 +4,6 @@ import { BadgeCheck } from "lucide-react";
 import Link from "next/link";
 import { CONTACT_DETAILS } from "@/utils/constants";
 export default function Footer() {
-  
   return (
     <div className="bg-white font-montserrat mx-4 lg:mx-12">
       {/* Wrapped Section with Common Blue Background */}
@@ -49,15 +48,15 @@ export default function Footer() {
 
           {/* Buttons Section */}
           <div className="flex justify-center space-x-4">
-          <Link href="#contactus" passHref>
-            <Button className="bg-[#31C4F5] text-white py-2 px-6 hover:text-[#13627c]  hover:bg-white rounded-40px">
-              Get Started
-            </Button>
+            <Link href="#contactus" passHref>
+              <Button className="bg-[#31C4F5] text-white py-2 px-6 hover:text-[#13627c]  hover:bg-white rounded-40px">
+                Get Started
+              </Button>
             </Link>
             <Link href="#contactus" passHref>
-            <Button className="border border-white text-white bg-[#0C495D] py-2 px-6 rounded-40px">
-              Book a Demo
-            </Button>
+              <Button className="border border-white text-white bg-[#0C495D] py-2 px-6 rounded-40px">
+                Book a Demo
+              </Button>
             </Link>
           </div>
         </div>
@@ -71,14 +70,14 @@ export default function Footer() {
             <div className="flex flex-col items-center md:items-start text-center md:text-left w-full">
               {/* Increased Logo Size */}
               <Image
-                src="/aqn-website/logo.svg"
+                src="/logo.svg"
                 alt="Aquanova logo"
                 width={150} // Increased size
                 height={75} // Adjust height proportionally
                 className="mb-2"
               />
               <p>© 2025 by Aquanova</p>
-            
+
               <p>All Rights Reserved</p>
             </div>
             <div className="flex flex-col items-center md:items-end text-center md:text-right">

@@ -10,7 +10,7 @@ const products = [
     description:
       "A Compressive platform to manage all the technical processes onboard",
     link: "#",
-    logoUrl: "/aqn-website/prod-logo.svg",
+    logoUrl: "/prod-logo.svg",
   },
   {
     title: "AQUASHIFT",
@@ -18,14 +18,14 @@ const products = [
     description:
       "A Platform to manage work and rest hours of the onboard staff in compliance with MLC regulations",
     link: "#",
-    logoUrl: "/aqn-website/prod-logo.svg",
+    logoUrl: "/prod-logo.svg",
   },
   {
     title: "AQUACREW",
     desc: "Aquacrew",
     description: "A platform for end-to-end crew management",
     link: "#",
-    logoUrl: "/aqn-website/prod-logo.svg",
+    logoUrl: "/prod-logo.svg",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function ProductShowcase() {
       id="product"
       className="min-h-[50vh] w-full bg-cover bg-center bg-no-repeat py-2 sm:py-8 md:py-8 px-4"
       style={{
-        backgroundImage: `url('/aqn-website/bg-product-n.png')`,
+        backgroundImage: `url('/bg-product-n.png')`,
       }}
     >
       <div className="max-w-6xl mx-auto">
@@ -52,7 +52,7 @@ export default function ProductShowcase() {
               {/* Background */}
               <div className="relative w-full" style={{ height: "180px" }}>
                 <Image
-                  src="/aqn-website/re.png"
+                  src="/re.png"
                   alt="Background"
                   width={500}
                   height={100}

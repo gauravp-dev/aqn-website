@@ -1,5 +1,4 @@
 {
-  "homepage": "https://gauravp-dev.github.io/aqn-website",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -8,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "deploy": "gh-pages -d out --nojekyll"
+    "export": "next export"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

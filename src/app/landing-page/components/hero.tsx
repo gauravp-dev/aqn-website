@@ -17,7 +17,7 @@ function hero() {
           <div
             className="absolute inset-0 z-0 rounded-b-sm md:rounded-b-2xl bg-custom"
             style={{
-              backgroundImage: "url(/aqn-website/bg-img.webp)",
+              backgroundImage: "url(/bg-img.webp)",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
@@ -32,33 +32,31 @@ function hero() {
           {/* Content */}
           <div className="relative z-10 mx-4 pt-32 px-4 sm:mx-4 md:mx-6 lg:mx-4 xl:mx-4 lg:px-4 xl:px-4 2xl:px-4">
             <div className="grid grid-cols-1 items-center gap-0 sm:mt-7 md:mt-10 lg:grid-cols-5">
-            <div className="space-y-6 lg:col-span-3">
-  <h1 className="font-montserrat text-5xl font-bold leading-tight text-white md:text-5xl lg:text-5xl xl:text-5xl">
-    Unlock the power of data-driven ship management with
-  </h1>
+              <div className="space-y-6 lg:col-span-3">
+                <h1 className="font-montserrat text-5xl font-bold leading-tight text-white md:text-5xl lg:text-5xl xl:text-5xl">
+                  Unlock the power of data-driven ship management with
+                </h1>
 
-  {/* Clickable Text for Navigation */}
-  <p
-  className="text-[#31C4F5] text-5xl underline cursor-pointer hover:text-[#ffffff] inline-block w-fit"
-  onClick={() => router.push("/aquapro")}
->
-  AQUAPRO↗
-</p>
-
-</div>
-
+                {/* Clickable Text for Navigation */}
+                <p
+                  className="text-[#31C4F5] text-5xl underline cursor-pointer hover:text-[#ffffff] inline-block w-fit"
+                  onClick={() => router.push("/aquapro")}
+                >
+                  AQUAPRO↗
+                </p>
+              </div>
             </div>
 
             {/* "Book a Demo" Button*/}
             <Link href="#contactus" passHref>
-            <div className="flex justify-start py-8">
-              <Button
-                size="lg"
-                className="w-full sm:w-full lg:w-1/2 lg:max-w-[200px] px-2 py-6 text-xl text-white bg-[#31C4F5] hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white"
-              >
-                Book a Demo
-              </Button>
-            </div>
+              <div className="flex justify-start py-8">
+                <Button
+                  size="lg"
+                  className="w-full sm:w-full lg:w-1/2 lg:max-w-[200px] px-2 py-6 text-xl text-white bg-[#31C4F5] hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white"
+                >
+                  Book a Demo
+                </Button>
+              </div>
             </Link>
           </div>
         </section>
@@ -79,7 +77,7 @@ function hero() {
               <div
                 className="w-full max-w-[679px] h-auto aspect-[679/388] rounded-[54.42px] bg-cover bg-center"
                 style={{
-                  backgroundImage: "url(/aqn-website/section-2.png)",
+                  backgroundImage: "url(/section-2.png)",
                 }}
               />
             </div>

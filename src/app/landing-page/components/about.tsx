@@ -14,7 +14,7 @@ export default function About() {
       {/* Left Image - Touching Left Boundary (Hidden on Small Screens) */}
       <div className="absolute top-10 left-0 h-auto w-50 lg:w-60 hidden md:block">
         <Image
-          src="/aqn-website/marine-engineer.png"
+          src="/marine-engineer.png"
           alt="Marine engineer working on control panel"
           className="w-full h-auto"
           width={150}
@@ -26,7 +26,7 @@ export default function About() {
       {/* Right Image - Touching Right Boundary (Hidden on Small Screens) */}
       <div className="absolute bottom-10 right-0 h-auto w-50 lg:w-60 hidden md:block">
         <Image
-          src="/aqn-website/marine-engineer2.png"
+          src="/marine-engineer2.png"
           alt="Marine engineer standing on a ship deck"
           className="w-full h-auto"
           width={150}

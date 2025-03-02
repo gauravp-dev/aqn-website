@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4 h-[90%]">
           <span className="text-lg font-bold text-white mr-6 flex items-center gap-2">
             <Image
-              src="/aqn-website/logo.svg"
+              src="/logo.svg"
               width={120}
               height={100}
               alt="Aquanova Logo"
@@ -94,7 +94,7 @@ const Navbar = () => {
                         >
                           <div className="relative w-10 h-10">
                             <Image
-                              src={product.icon || "/aqn-website/prod-logo.svg"}
+                              src={product.icon || "/prod-logo.svg"}
                               alt=""
                               fill
                               className="object-contain"
@@ -116,7 +116,6 @@ const Navbar = () => {
               )}
             </div>
 
-          
             <Link href="#aboutUs" passHref>
               <Button
                 variant="ghost"
@@ -129,10 +128,10 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-        <Link href="#contactus" passHref>
-          <Button className="rounded-md bg-[#31C4F5] text-white hover:bg-[#8c95a3]/90 hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white">
-            Talk to Sales
-          </Button>
+          <Link href="#contactus" passHref>
+            <Button className="rounded-md bg-[#31C4F5] text-white hover:bg-[#8c95a3]/90 hover:text-[#13627c] hover:border-[#13627c] hover:border-2 hover:bg-white">
+              Talk to Sales
+            </Button>
           </Link>
           <div className="lg:hidden relative">
             <Button
@@ -154,7 +153,7 @@ const Navbar = () => {
                       Product <ChevronDown className="ml-1 h-4 w-4" />
                     </Button>
                   </Link>
-                
+
                   <Button
                     variant="ghost"
                     className="flex items-center justify-center"

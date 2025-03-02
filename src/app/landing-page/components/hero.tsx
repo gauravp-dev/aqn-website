@@ -16,7 +16,7 @@ function hero() {
           <div
             className="absolute inset-0 z-0 rounded-b-sm md:rounded-b-2xl bg-custom"
             style={{
-              backgroundImage: "url(/bg-img.webp)",
+              backgroundImage: "url(/aqn-website/bg-img.webp)",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
@@ -76,7 +76,7 @@ function hero() {
               <div
                 className="w-full max-w-[679px] h-auto aspect-[679/388] rounded-[54.42px] bg-cover bg-center"
                 style={{
-                  backgroundImage: "url(/section-2.png)",
+                  backgroundImage: "url(/aqn-website/section-2.png)",
                 }}
               />
             </div>

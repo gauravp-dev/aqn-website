@@ -6,13 +6,21 @@ import Hero from "./components/hero";
 import "../globals.css";
 
 import Feature2 from "./components/feature2";
-import About from "./components/about";
+
 import Contact from "./components/contact";
 import SecurityAndBackup from "./components/securityAndBackup";
 import Footer from "./components/footer";
 import Newfeat from "./components/newfeat";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import AboutPage from "./components/newaboutus";
 
 export default function Home() {
+  const router = useRouter();
+  useEffect(() => {
+    router.replace("/landing-page");
+  }, [router]);
+
   useLayoutEffect(() => {
     window.scrollTo(0, 0); // Reset scroll position to top on refresh
   }, []);
@@ -22,10 +30,11 @@ export default function Home() {
       <ProductShowcase />
       <Newfeat />
       <Feature2 />
-      <About />
+      <AboutPage/>
       <Contact />
       <SecurityAndBackup />
       <Footer />
+      
     </>
   );
 }

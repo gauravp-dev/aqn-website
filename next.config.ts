@@ -5,15 +5,9 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   output: "export",
   basePath: "/aqn-website",
-
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/landing-page",
-        permanent: false,
-      },
-    ];
+  assetPrefix: "/aqn-website/",
+  images: {
+    unoptimized: true, // Disable image optimization for static exports
   },
 };
 

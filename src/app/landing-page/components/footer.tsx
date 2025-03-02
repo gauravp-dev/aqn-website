@@ -14,33 +14,36 @@ export default function Footer() {
             Drive Sustainability.
           </h1>
           <div className="flex flex-col md:flex-row justify-center items-start space-y-4 md:space-y-0 md:space-x-4 mb-8">
-  <div className="flex items-start space-x-2">
-    <BadgeCheck className="text-blue-400 w-5 h-5 flex-shrink-0 mt-1" />
-    <div>
-      <span>
-        Comply with <span className="font-bold">industry rules</span> and regulations.
-      </span>
-    </div>
-  </div>
+            <div className="flex items-start space-x-2">
+              <BadgeCheck className="text-blue-400 w-5 h-5 flex-shrink-0 mt-1" />
+              <div>
+                <span>
+                  Comply with <span className="font-bold">industry rules</span>{" "}
+                  and regulations.
+                </span>
+              </div>
+            </div>
 
-  <div className="flex items-start space-x-2">
-    <BadgeCheck className="text-blue-400 w-5 h-5 flex-shrink-0 mt-1" />
-    <div>
-      <span>
-        Improve visibility and <span className="font-bold">automate</span> operations.
-      </span>
-    </div>
-  </div>
+            <div className="flex items-start space-x-2">
+              <BadgeCheck className="text-blue-400 w-5 h-5 flex-shrink-0 mt-1" />
+              <div>
+                <span>
+                  Improve visibility and{" "}
+                  <span className="font-bold">automate</span> operations.
+                </span>
+              </div>
+            </div>
 
-  <div className="flex items-start space-x-2">
-    <BadgeCheck className="text-blue-400 w-5 h-5 flex-shrink-0 mt-1" />
-    <div>
-      <span>
-        Move towards <span className="font-bold">net zero</span> carbon shipping.
-      </span>
-    </div>
-  </div>
-</div>
+            <div className="flex items-start space-x-2">
+              <BadgeCheck className="text-blue-400 w-5 h-5 flex-shrink-0 mt-1" />
+              <div>
+                <span>
+                  Move towards <span className="font-bold">net zero</span>{" "}
+                  carbon shipping.
+                </span>
+              </div>
+            </div>
+          </div>
 
           {/* Buttons Section */}
           <div className="flex justify-center space-x-4">
@@ -62,7 +65,7 @@ export default function Footer() {
             <div className="flex flex-col items-center md:items-start text-center md:text-left w-full">
               {/* Increased Logo Size */}
               <Image
-                src="/logo.svg"
+                src="/aqn-website/logo.svg"
                 alt="Aquanova logo"
                 width={150} // Increased size
                 height={75} // Adjust height proportionally

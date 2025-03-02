@@ -9,11 +9,11 @@ function Newfeat() {
         management platform.
       </h1>
       <div className="flex-1 flex justify-center items-center w-full h-[60%]">
-        <Image 
-          src="newfeat.svg" 
-          alt="My Logo" 
-          width={100} 
-          height={100} 
+        <Image
+          src="/aqn-website/newfeat.svg"
+          alt="My Logo"
+          width={100}
+          height={100}
           className="w-[90%] h-[70%]"
         />
       </div>

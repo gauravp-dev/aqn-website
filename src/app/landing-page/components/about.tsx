@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -14,7 +14,7 @@ export default function About() {
       {/* Left Image - Touching Left Boundary (Hidden on Small Screens) */}
       <div className="absolute top-10 left-0 h-auto w-50 lg:w-60 hidden md:block">
         <Image
-          src="/marine-engineer.png"
+          src="/aqn-website/marine-engineer.png"
           alt="Marine engineer working on control panel"
           className="w-full h-auto"
           width={150}
@@ -26,7 +26,7 @@ export default function About() {
       {/* Right Image - Touching Right Boundary (Hidden on Small Screens) */}
       <div className="absolute bottom-10 right-0 h-auto w-50 lg:w-60 hidden md:block">
         <Image
-          src="/marine-engineer2.png"
+          src="/aqn-website/marine-engineer2.png"
           alt="Marine engineer standing on a ship deck"
           className="w-full h-auto"
           width={150}
@@ -46,10 +46,9 @@ export default function About() {
           maritime operations.
         </p>
         <p className="font-montserrat lg:text-xl text-[#0B4D6B] mb-6">
-          Our ultimate mission is to drive sustainability in the maritime sector
-          through green technology for unparalleled efficiency and precision.
-          We're committed to creating innovative tools that boost operational
-          performance while reducing environmental impact.
+          {
+            "Our ultimate mission is to drive sustainability in the maritime sector through green technology for unparalleled efficiency and precision. We're committed to creating innovative tools that boost operational performance while reducing environmental impact."
+          }
         </p>
 
         {/* Button */}

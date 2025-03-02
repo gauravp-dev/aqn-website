@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4 h-[90%]">
           <span className="text-lg font-bold text-white mr-6 flex items-center gap-2">
             <Image
-              src="/logo.svg"
+              src="/aqn-website/logo.svg"
               width={120}
               height={100}
               alt="Aquanova Logo"
@@ -94,7 +94,7 @@ const Navbar = () => {
                         >
                           <div className="relative w-10 h-10">
                             <Image
-                              src={product.icon || "/prod-logo.svg"}
+                              src={product.icon || "/aqn-website/prod-logo.svg"}
                               alt=""
                               fill
                               className="object-contain"
@@ -128,7 +128,7 @@ const Navbar = () => {
             >
               Careers
             </Button>
-            <Link href="#about" passHref>
+            <Link href="#aboutUs" passHref>
               <Button
                 variant="ghost"
                 className="text-white hover:text-blue-700/80"

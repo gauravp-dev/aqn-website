@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { BadgeCheck } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -47,12 +48,16 @@ export default function Footer() {
 
           {/* Buttons Section */}
           <div className="flex justify-center space-x-4">
+          <Link href="#contactus" passHref>
             <Button className="bg-[#31C4F5] text-white py-2 px-6 hover:text-[#13627c]  hover:bg-white rounded-40px">
               Get Started
             </Button>
+            </Link>
+            <Link href="#contactus" passHref>
             <Button className="border border-white text-white bg-[#0C495D] py-2 px-6 rounded-40px">
               Book a Demo
             </Button>
+            </Link>
           </div>
         </div>
 
@@ -72,13 +77,13 @@ export default function Footer() {
                 className="mb-2"
               />
               <p>© 2025 by Aquanova</p>
-              <p>CR# 2052101838</p>
+            
               <p>All Rights Reserved</p>
             </div>
             <div className="flex flex-col items-center md:items-end text-center md:text-right">
               <p>Contact Us</p>
-              <p>+1 855-434-3564</p>
-              <p>support@aquanova.com</p>
+              <p>+91 9901725805</p>
+              <p>admin@aquanovamarine.com</p>
               <div className="flex space-x-4 mt-2">
                 <a href="#">
                   <i className="fab fa-twitter"></i>

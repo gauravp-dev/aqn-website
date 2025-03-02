@@ -2,6 +2,7 @@
 "use client"; // Ensure this runs on the client side
 import { useState } from "react";
 import Head from "next/head";
+import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -15,6 +16,9 @@ export default function Contact() {
   const [success, setSuccess] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  const whatsappNumber = "+91 9901725805"; // Change to your WhatsApp number
+  const email = "admin@aquanovamarine.com"; // Change to your Gmail ID
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
@@ -26,13 +30,11 @@ export default function Contact() {
     setError(null);
 
     try {
-    
       const response = await fetch("http://localhost:3000/aqn-website/api/sendMail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-      
 
       const result = await response.json();
       if (response.ok) {
@@ -49,7 +51,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="relative flex items-center justify-center min-h-[60vh] bg-[url('/aqn-website/bg-product-n.png')] bg-cover bg-center bg-no-repeat">
+    <div className="relative flex flex-col items-center justify-center min-h-[60vh] bg-[url('/aqn-website/bg-product-n.png')] bg-cover bg-center bg-no-repeat">
       {/* Background Overlay for Better Visibility */}
       <div className="absolute inset-0 bg-white bg-opacity-50"></div>
 
@@ -135,6 +137,46 @@ export default function Contact() {
           {success && <p className="text-green-600 text-center">{success}</p>}
           {error && <p className="text-red-600 text-center">{error}</p>}
         </form>
+
+      
+     {/* Contact via WhatsApp & Email */}
+<div id="contactus" className="flex items-center justify-center min-h-40  w-full">
+  <div className="bg-white p-6 sm:p-8 w-full text-center">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-24">
+      
+      {/* WhatsApp Section - Left Side */}
+      <div className="flex items-center gap-4">
+        <a
+          href={`https://wa.me/${whatsappNumber}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-green-500 text-4xl hover:scale-110 transition"
+        >
+          <FaWhatsapp />
+        </a>
+        <span className="text-lg font-medium text-gray-800 break-all">{whatsappNumber}</span>
+      </div>
+
+      {/* Divider (Optional) */}
+      <div className="hidden md:block w-px h-8 bg-gray-300"></div>
+
+      {/* Gmail Section - Right Side */}
+      <div className="flex items-center gap-4">
+        <a
+          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-red-500 text-4xl hover:scale-110 transition"
+        >
+          <FaEnvelope />
+        </a>
+        <span className="text-lg font-medium text-gray-800 break-all">{email}</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );

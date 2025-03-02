@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-1 items-center h-[60vh] border-b-2">
           <div className="bg-cyan-800 p-4 sm:p-6 md:p-12 flex flex-col justify-center items-center text-center h-full">
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              About us
+              About Us
             </h1>
             <p className="text-cyan-50 text-lg sm:text-xl leading-relaxed max-w-3xl">
               At AquaNova, our team of senior marine engineers and technology

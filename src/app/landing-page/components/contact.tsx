@@ -22,9 +22,9 @@ export default function Contact() {
 
       <div className="bg-white mt-4 md:ml-2 md:mr-2 bg-opacity-90 backdrop-blur-lg rounded-[40px] shadow-2xl p-8 max-w-7xl w-full">
         <h2 className="text-center text-2xl md:text-3xl font-semibold font-montserrat text-[#0B4D6B] mb-12">
-          Get in touch with us.
+          Get in Touch with Us.
           <br />
-          {"We're here to assist you."}
+          {"We're Here to Assist You."}
         </h2>
 
         {/* <form className="space-y-4">
@@ -97,14 +97,13 @@ export default function Contact() {
                   href={`whatsapp://send?phone=${whatsappNumber}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green-500 text-4xl hover:scale-110 transition"
+                  className="text-green-500 text-4xl hover:scale-110 transition flex items-center gap-4"
                 >
                   <FaWhatsapp />
+                  <span className="text-lg font-medium text-gray-800 break-all">
+                    {whatsappNumber}
+                  </span>
                 </a>
-
-                <span className="text-lg font-medium text-gray-800 break-all">
-                  {whatsappNumber}
-                </span>
               </div>
 
               {/* Divider (Optional) */}
@@ -116,13 +115,13 @@ export default function Contact() {
                   href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-red-500 text-4xl hover:scale-110 transition"
+                  className="text-red-500 text-4xl hover:scale-110 transition flex items-center gap-4"
                 >
                   <FaEnvelope />
+                  <span className="text-lg font-medium text-gray-800 break-all">
+                    {email}
+                  </span>
                 </a>
-                <span className="text-lg font-medium text-gray-800 break-all">
-                  {email}
-                </span>
               </div>
             </div>
           </div>

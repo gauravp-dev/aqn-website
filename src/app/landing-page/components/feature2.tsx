@@ -8,7 +8,7 @@ export default function Feature2() {
       <div className="absolute inset-0 bg-white bg-opacity-50"></div>
 
       <Head>
-        <title>AI-powered Ship Management</title>
+        <title>AI-Powered Ship Management</title>
         <meta
           name="description"
           content="With AI-powered automation at the core of your ship management."
@@ -19,9 +19,9 @@ export default function Feature2() {
       {/* Main Content */}
       <main className="relative text-center w-full max-w-7xl mx-4">
         <h1 className="text-2xl md:text-3xl font-semibold font-montserrat text-[#0B4D6B] mb-12">
-          With AI-powered automation at the
+          With AI-Powered Automation at the
           <br />
-          core of your ship management.
+          Core of Your Ship Management.
         </h1>
 
         <div className="bg-white bg-opacity-90 shadow-lg rounded-[40px] p-6 md:p-12 flex flex-col md:flex-row justify-around items-center md:items-stretch space-y-6 md:space-y-0 md:space-x-6 border border-blue-900">

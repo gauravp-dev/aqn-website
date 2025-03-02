@@ -4,9 +4,9 @@ function Newfeat() {
   return (
     <div className="h-[90%] flex flex-col justify-center items-center py-12">
       <h1 className="text-center text-2xl md:text-3xl font-semibold font-montserrat text-[#0B4D6B] mb-8">
-        Meet Aquapro, Our end-to-end ship
+        Meet Aquapro, Our end-to-end Ship
         <br />
-        management platform.
+        Management Platform.
       </h1>
       <div className="flex-1 flex justify-center items-center w-full h-[60%]">
         <Image

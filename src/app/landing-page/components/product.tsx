@@ -40,7 +40,7 @@ export default function ProductShowcase() {
     >
       <div className="max-w-6xl mx-auto">
         <h1 className="text-center text-3xl md:text-4xl font-bold text-[#0B4D6B] mb-12">
-          Explore our product line ⇣
+          Explore our Product Line ⇣
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

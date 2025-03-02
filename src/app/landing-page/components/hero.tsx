@@ -34,7 +34,7 @@ function hero() {
             <div className="grid grid-cols-1 items-center gap-0 sm:mt-7 md:mt-10 lg:grid-cols-5">
               <div className="space-y-6 lg:col-span-3">
                 <h1 className="font-montserrat text-5xl font-bold leading-tight text-white md:text-5xl lg:text-5xl xl:text-5xl">
-                  Unlock the power of data-driven ship management with
+                  Unlock The Power of Data-driven Ship Management with
                 </h1>
 
                 {/* Clickable Text for Navigation */}
@@ -65,8 +65,8 @@ function hero() {
           {/* Main Heading */}
           <h2 className="text-[#13627c] text-2xl md:text-3xl font-semibold font-montserrat leading-[1.2] text-center lg:text-left mb-6">
             <div className="flex flex-col items-center lg:items-start">
-              <span>Enabling vessel management with AI</span>
-              <span className="lg:pl-20">powered digital innovation</span>
+              <span>Enabling Vessel Management with AI</span>
+              <span className="lg:pl-20">Powered Digital Innovation</span>
             </div>
           </h2>
 

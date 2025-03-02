@@ -140,20 +140,21 @@ export default function Contact() {
 
       
      {/* Contact via WhatsApp & Email */}
-<div  className="flex items-center justify-center min-h-40  w-full">
-  <div className="bg-white p-6 sm:p-8 w-full text-center">
-    <div className="flex flex-col md:flex-row items-center justify-center gap-24">
+     <div className="flex items-center justify-center min-h-40 w-full">
+  <div className="bg-white p-6 sm:p-8 w-full text-center mt-2">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-12 sm:gap-16 lg:gap-24">
       
       {/* WhatsApp Section - Left Side */}
       <div className="flex items-center gap-4">
-        <a
-          href={`https://wa.me/${whatsappNumber}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-green-500 text-4xl hover:scale-110 transition"
-        >
-          <FaWhatsapp />
-        </a>
+      <a
+  href={`whatsapp://send?phone=${whatsappNumber}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-green-500 text-4xl hover:scale-110 transition"
+>
+  <FaWhatsapp />
+</a>
+
         <span className="text-lg font-medium text-gray-800 break-all">{whatsappNumber}</span>
       </div>
 

@@ -13,7 +13,7 @@ import Footer from "./landing-page/components/footer";
 import Newfeat from "./landing-page/components/newfeat";
 
 import AboutPage from "./landing-page/components/newaboutus";
-
+import ContactPage from "./landing-page/newcontactus";
 
 export default function Home() {
 
@@ -29,7 +29,7 @@ export default function Home() {
       <Feature2 />
       <AboutPage/>
       <Contact />
-      
+ 
       <SecurityAndBackup />
       <Footer />
       

@@ -51,7 +51,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-[60vh] bg-[url('/aqn-website/bg-product-n.png')] bg-cover bg-center bg-no-repeat">
+    <div id="contactus" className="relative flex flex-col items-center justify-center min-h-[60vh] bg-[url('/aqn-website/bg-product-n.png')] bg-cover bg-center bg-no-repeat">
       {/* Background Overlay for Better Visibility */}
       <div className="absolute inset-0 bg-white bg-opacity-50"></div>
 
@@ -140,7 +140,7 @@ export default function Contact() {
 
       
      {/* Contact via WhatsApp & Email */}
-<div id="contactus" className="flex items-center justify-center min-h-40  w-full">
+<div  className="flex items-center justify-center min-h-40  w-full">
   <div className="bg-white p-6 sm:p-8 w-full text-center">
     <div className="flex flex-col md:flex-row items-center justify-center gap-24">
       

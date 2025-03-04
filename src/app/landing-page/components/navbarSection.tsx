@@ -14,15 +14,14 @@ const products = [
     icon: "",
   },
   {
-    title: "AQUAPRO",
+    title: "AQUASHIFT",
     description:
-      "A Compressive platform to manage all the technical processes onboard",
+      "A Platform to manage work and rest hours of the onboard staff in compliance with MLC & STCW regulations",
     icon: "",
   },
   {
-    title: "AQUAPRO",
-    description:
-      "A Compressive platform to manage all the technical processes onboard",
+    title: "AQUACREW",
+    description: "A platform for end-to-end crew management",
     icon: "",
   },
 ];

@@ -16,7 +16,7 @@ const products = [
     title: "AQUASHIFT",
     desc: "Aquashift",
     description:
-      "A Platform to manage work and rest hours of the onboard staff in compliance with MLC regulations",
+      "A Platform to manage work and rest hours of the onboard staff in compliance with MLC & STCW regulations",
     link: "#",
     logoUrl: "/prod-logo.svg",
   },

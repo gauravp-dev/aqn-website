@@ -1,6 +1,5 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import Navbar from "./navbarSection";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -8,7 +7,7 @@ import Link from "next/link";
 import "../../globals.css";
 
 function hero() {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <>
       <div className="min-h-screen bg-[#ffffff] px-1 lg:px-12 xl:px-12 2xl:px-14 gap-10">
@@ -40,7 +39,7 @@ function hero() {
                 {/* Clickable Text for Navigation */}
                 <p
                   className="text-[#31C4F5] text-5xl underline cursor-pointer hover:text-[#ffffff] inline-block w-fit"
-                  onClick={() => router.push("/aquapro")}
+                  // onClick={() => router.push("/aquapro")}
                 >
                   AQUAPRO↗
                 </p>
